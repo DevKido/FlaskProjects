@@ -1,0 +1,22 @@
+<h1>Welcome to Signup form</h1>
+<h2> Please enter your details below:</h2>
+
+<form method='POST'>
+    {{ form.hidden_tag()}}
+    <br>
+    {{form.fname.label}} {{form.fname()}}
+    <br>
+    {{form.lname.label}} {{form.lname()}}
+    <br>
+    {{form.age.label}} {{form.age}}
+    <br>
+    {{form.sex.label}} {{form.sex}}
+    <br>
+    {{form.dob.label}} {{form.dob}}
+    <br>
+    {{form.hobbies.label}} {{form.hobbies}}
+    <br>
+    <br>
+    <br>
+    {{form.submit()}}
+</form>
