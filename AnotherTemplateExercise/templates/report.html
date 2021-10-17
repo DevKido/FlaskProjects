@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if reqs|length > 0 %}
+        <h1> The following Requirements were not met</h1>
+
+        <ul>
+            {% for req in reqs %}
+                    <li> {{req}} </li>
+            {% endfor %}            
+        </ul>
+{% else %} 
+        <h1> Username is valid!!</h1>
+{% endif %}
+
+{% endblock %}
+
+

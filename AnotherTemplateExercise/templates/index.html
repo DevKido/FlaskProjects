@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<nav class="jumbotron">
+    <h1> Wecome!! </h1>
+    <p> Fill out the form here </p>
+
+    <p> Requirements: </p>
+
+    <ul>
+        {% for req in reqs %}
+                <li>{{req}}</li>
+        {% endfor %}
+        
+    </ul>
+
+    <br /> <br />
+    <form action="{{ url_for('nameCheck') }}">
+        <label for='uName'>User name:   </label>
+        <input type="text" name="uname" />
+        <input type='submit' value="Check" />
+    </form>
+
+</nav>
+
+{% endblock %}
+
