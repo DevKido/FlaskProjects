@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<nav class='jumbotron'>
+    <form name="signup" action="{{ url_for('thank_you') }}">
+        <label for="firstName">First Name: </label>
+        <input type="text" name="first" />
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="last" />
+        <input type="submit" value="Submit form" />
+    </form>
+</nav>
+{% endblock %}
